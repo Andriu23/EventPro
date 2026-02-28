@@ -574,3 +574,97 @@ body {
     height: 32px;
     color: white;
 }
+
+/* ===================================================== */
+/* REDES SOCIALES CON COLORES REALES */
+/* ===================================================== */
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.social-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Base */
+.social-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Animación general */
+.social-icon:hover {
+    transform: translateY(-6px);
+    color: white;
+}
+
+/* ================= TIKTOK ================= */
+.social-icon.tiktok:hover {
+    background: #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* ================= INSTAGRAM ================= */
+.social-icon.instagram:hover {
+    background: linear-gradient(
+        45deg,
+        #f58529,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+    box-shadow: 0 0 15px rgba(221, 42, 123, 0.6);
+}
+
+/* ================= FACEBOOK ================= */
+.social-icon.facebook:hover {
+    background: #1877f2;
+    box-shadow: 0 0 15px rgba(24, 119, 242, 0.6);
+}
+
+/* ===================================================== */
+/* CONTACTO - ENLACES Y MAPA */
+/* ===================================================== */
+
+.contact__details li {
+    margin-bottom: 15px;
+}
+
+.contact__details a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact__details a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* MAPA RESPONSIVO */
+.contact__map {
+    margin-top: 30px;
+}
+
+.contact__map iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
